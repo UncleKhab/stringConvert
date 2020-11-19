@@ -1,38 +1,77 @@
-.App {
+body, * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-header {
   text-align: center;
+  font-size: 56px;
+  font-weight: bold;
+  margin: 10px auto 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sub-header {
+  text-align: center;
+  margin: 0 auto 20px auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form {
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+form textarea {
+  padding: 20px;
+  display: block;
+  width: 80%;
+  height: 20vh;
+  margin: auto;
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+form input[type=submit] {
+  display: block;
+  margin: 20px auto;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 5px 20px;
+  background-color: #3285a8;
+  color: #e4e9eb;
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form input[type=submit]:hover {
+  background-color: #37a1ce;
+  color: #ffffff;
 }
+
+form input[type=submit]:focus {
+  outline-style: none;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.container h2 {
+  font-size: 24px;
+  text-align: center;
+  color: #0b4057;
+  text-decoration: underline;
+  margin: 0 0 20px 0;
+}
+
+.container p {
+  font-size: 20px;
+  margin: 0;
+  font-family: Arial, Arial, Helvetica, sans-serif;
+}
+
+.container > :nth-child(odd) {
+  background-color: #c9c9c9;
+}
+
+.container div {
+  padding: 10px 20px 20px 20px;
+}
+/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,80 @@
+$small-text-size: 16px;
+$medium-text-size: 20px;
+$regular-text-size: 24px;
+$large-text-size: 32px;
+$big-text-size:40px;
+$huge-text-size:56px;
+
+$off-white: #e4e9eb;
+$hover-white: #ffffff;
+$light-blue : #3285a8;
+$dark-blue : #0b4057;
+$hover-blue : #37a1ce;
+$light-gray: #c9c9c9;
+
+body, *{
+    box-sizing:border-box;
+}
+.main-header{
+    text-align:center;
+    font-size: $huge-text-size;
+    font-weight: bold;
+    margin: 10px auto 0 auto;
+}
+.sub-header{
+    text-align:center;
+    margin: 0 auto 20px auto;
+}
+form{
+    width:100%;
+    textarea{
+        padding:20px;
+        display:block;
+        width:80%;
+        height:20vh;
+        margin:auto;
+        font-size: $small-text-size
+    }
+    input[type=submit]{
+        display:block;
+        margin:20px auto;
+        font-size:$regular-text-size;
+        font-weight:bold;
+        padding:5px 20px;
+        background-color: $light-blue;
+        color:$off-white;
+        border:none;
+        &:hover{
+            background-color: $hover-blue;
+            color:$hover-white;
+        }
+        &:focus{
+            outline-style:none;
+        }
+
+    }
+}
+.container{
+    width:80%;
+    margin:auto;
+    h2{
+        font-size:$regular-text-size;
+        text-align:center;
+        color: $dark-blue;
+        text-decoration:underline;
+        margin:0 0 20px 0;
+        
+    }
+    p{
+        font-size:$medium-text-size;
+        margin:0;
+        font-family: Arial, Arial, Helvetica, sans-serif
+    }
+    & > :nth-child(odd){
+        background-color:$light-gray;
+        
+    }
+    div{
+        padding:10px 20px 20px 20px;
+    }
+}
